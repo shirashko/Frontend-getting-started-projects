@@ -1,0 +1,86 @@
+.user-form {
+  font-family: "Brown LL";
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    label {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    input {
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 4px; 
+      font-family: 'Brown LL';
+      margin-left: 8px;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+    }
+
+    .form-buttons {
+      display: flex;
+      justify-content: flex-start;
+      gap: 16px;
+
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+
+        &.cancel-button {
+          background-color: #dc3545;
+
+          &:hover {
+            background-color: #c82333;
+          }
+        }
+      }
+    }
+  }
+
+  .error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+    padding: 5px;
+    border-radius: 4px;
+    margin-left: 8px;
+  }
+
+  .toggle-optional-fields {
+    background-color: rgb(213, 231, 153);
+    color: #333;
+    font-family: 'Brown LL';
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 16px;
+    width: 250px;
+    align-self: center;
+  }
+  
+}

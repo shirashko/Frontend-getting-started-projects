@@ -1,0 +1,54 @@
+.profile-preview {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+
+  .user-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 604px;
+
+    .user-name {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--semantic-text-primary, #2c2d30);
+    }
+    
+    .edit-profile-link {
+      display: flex;
+      justify-content: flex-end;
+      text-decoration: none;
+
+    .edit-button {
+      width: 172px;
+      height: 40px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: var(--semantic-bg-neutral-secondary, rgba(44, 45, 48, 0.049));
+      border-color: rgba(44, 45, 48, 0.049);
+      color: var(--semantic-fg-primary, #161719);
+      font-family: "Brown LL";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: -0.5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: var(--semantic-bg-neutral-secondary, rgba(44, 45, 48, 0.079));
+      }
+    }
+
+    }
+  }
+
+  .profile-image {
+    width: 136px;
+    height: 136px;
+    border-radius: 100px;
+    border: 0.824px solid var(--semantic-bg-white-secondary, rgba(255, 255, 255, 0.12));
+  }
+}
